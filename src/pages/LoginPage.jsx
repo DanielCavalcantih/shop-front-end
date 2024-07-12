@@ -28,7 +28,7 @@ export default function LoginPage() {
   return (
     <div className="container-login">
       <div className="img-title">
-        <h1>Storage</h1>
+        <h1>Shop</h1>
         <img src={shop} alt="Imagem de shop" />
       </div>
       <div className="container-form">

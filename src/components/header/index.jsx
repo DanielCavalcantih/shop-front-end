@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header>
-      <h1>Storage</h1>
+      <h1>Shop</h1>
       <button onClick={handleLeave}>Sair</button>
     </header>
   );
