@@ -49,7 +49,7 @@ export default function ModalCreate({
         price,
       });
       if (response.status === 201) {
-        successAlert("Produto adicionado com sucesso!");
+        successAlert(response.data.message);
         closeModal();
         selectedSection === 1
           ? await reloadProducts()

@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { editProducts } from "../../services/product";
 import ReactLoading from "react-loading";
 import { errorAlert, successAlert } from "../../utils/alets";
+import { getRentability } from "../../utils/masks";
 
 export default function ModalEdit({
   closeModal,
@@ -11,12 +12,6 @@ export default function ModalEdit({
   selectedSection,
   selectedProduct,
 }) {
-  const getRentability = (value) => {
-    return Number(value).toLocaleString("pt-br", {
-      style: "currency",
-      currency: "BRL",
-    });
-  };
   const [imageUrl, setImageUrl] = useState(selectedProduct.image);
   const [productName, setProductName] = useState(selectedProduct.name);
   const [isLoading, setIsLoading] = useState(false);
@@ -62,7 +57,7 @@ export default function ModalEdit({
         selectedProduct.id
       );
       if (response.status === 200) {
-        successAlert("Produto editado com sucesso!");
+        successAlert(response.data.message);
         closeModal();
         await reloadMyProducts();
       }

@@ -8,3 +8,10 @@ export const formatedData = (creationDate) => {
   if (month < 10) return [day, '0' + month, year].join('/');
   return [day, month, year].join('/');
 };
+
+export const getRentability = (value) => {
+  return Number(value).toLocaleString("pt-br", {
+    style: "currency",
+    currency: "BRL",
+  });
+};

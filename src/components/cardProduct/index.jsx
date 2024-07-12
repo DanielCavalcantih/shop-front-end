@@ -1,6 +1,6 @@
 import { Edit, Trash } from "lucide-react";
-import { formatedData } from "../../utils/marks";
 import "./style.css";
+import { formatedData, getRentability } from "../../utils/masks";
 
 export default function CardProduct({
   product,
@@ -10,13 +10,6 @@ export default function CardProduct({
   setShowModalEdit,
   setShowModalDelete,
 }) {
-  const getRentability = (value) => {
-    return Number(value).toLocaleString("pt-br", {
-      style: "currency",
-      currency: "BRL",
-    });
-  };
-
   return (
     <div className="card-product">
       <div className="img-texts">

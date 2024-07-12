@@ -19,7 +19,11 @@
   gap: 16px;
 }
 .limit-img {
-  min-width: 360px;
+  min-width: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
 }
 
 .container-info-product {
