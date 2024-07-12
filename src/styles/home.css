@@ -1,0 +1,86 @@
+main {
+  padding: 110px 50px 50px 50px;
+}
+
+main h2 {
+  font-size: 24px;
+  font-family: Inter;
+  font-weight: 600;
+}
+
+.section-title-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1c9bfd;
+  color: white;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.add-button:hover {
+  background-color: rgb(23, 123, 199);
+}
+
+.container-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.container-products {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 70%;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.none {
+  font-size: 20px;
+  font-family: Inter;
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  gap: 16px;
+}
+
+.change-button {
+  border: none;
+  font-size: 20px;
+  transition: 200ms;
+  background-color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  width: 190px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.change-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.selected {
+  background-color: #1c9bfd;
+  color: white;
+}
+
+.selected:hover {
+  background-color: #1c9bfd;
+}
