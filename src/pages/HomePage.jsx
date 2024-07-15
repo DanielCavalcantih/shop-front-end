@@ -37,7 +37,12 @@ export default function HomePage() {
     try {
       const response = await getProducts();
       if (response.status === 200) {
-        setProducts(response.data);
+        const sorted = [
+          ...response.data.sort(
+            (a, b) => new Date(b.created) - new Date(a.created)
+          ),
+        ];
+        setProducts(sorted);
         setIsLoading(false);
       }
     } catch (error) {
@@ -52,7 +57,12 @@ export default function HomePage() {
     try {
       const response = await getMyProducts();
       if (response.status === 200) {
-        setProducts(response.data);
+        const sorted = [
+          ...response.data.sort(
+            (a, b) => new Date(b.created) - new Date(a.created)
+          ),
+        ];
+        setProducts(sorted);
         setIsLoading(false);
       }
     } catch (error) {
