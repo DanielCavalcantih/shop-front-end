@@ -8,7 +8,7 @@ Para testar a aplicação, você pode acessar este [LINK PARA O PROJETO](https:/
 
 ## 📋 Pré-requisitos
 
-Dependências do projeto fron-end:<br />
+Dependências do projeto front-end:<br />
 
   — react;<br />
   — react-dom;<br />
@@ -29,6 +29,8 @@ Dependências do projeto fron-end:<br />
   react-loading: Utilizada para adicionar carregamentos personalizados na aplicação;
   lucide-react: Uma biblioteca de ícones para utiliza-los no decorrer da aplicação;
   awesome-snackbar: Uma biblioteca que possibilita criar alertas personalizados na aplicação;
+
+  ## Link para o repositório [BACK-END](https://github.com/DanielCavalcantih/shop-back-end)
 
   ⌨️ Feito por [Daniel Cavalcanti](https://github.com/DanielCavalcantih) 😊
   
