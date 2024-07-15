@@ -135,7 +135,7 @@ export default function LoginPage() {
           )}
         </form>
         {loginRegister === "login" ? (
-          <p>
+          <p className="text-account">
             Ainda não possui uma conta?{" "}
             <button
               className="register-button"

@@ -152,10 +152,23 @@
   }
 
   .container-form input {
-    width: auto;
+    width: 280px;
+    font-size: 18px;
   }
 
   .container-form h2 {
     font-size: 30PX;
+  }
+
+  .login-register-button {
+    font-size: 20px;
+  }
+
+  .register-button {
+    font-size: 18px;
+  }
+
+  .text-account {
+    font-size: 12px;
   }
 }
