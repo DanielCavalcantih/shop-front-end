@@ -1,6 +1,6 @@
 # Shop Front-End
 
-O Shop consiste em uma aplicação para anúncios de produtos, com um sistema de CRUD (Create, Read, Update e Delete) completo. Também foi implementado um sistema de login, com JWT (Json Web Token), para gerar um token ao logar na aplicação e validá-lo nas demais requisições do sistema. Ao entrarmos, podemos visualizar a lista de produtos criados por você e por demais usuários, podemos adicionar novos produtos, editar os produtos criados por você e deletar seus produtos.
+O Shop consiste em uma aplicação para anúncios de produtos, com um sistema de CRUD (Create, Read, Update e Delete) completo. Também foi implementado um sistema de login, com JWT (Json Web Token), para gerar um token ao logar na aplicação e validá-lo nas demais requisições do sistema. Ao entrarmos, podemos visualizar a lista de produtos criados por você e por demais usuários. Podemos adicionar novos produtos, editar os produtos criados por você e deletar seus produtos.
 
 ## 🚀 Começando
 
