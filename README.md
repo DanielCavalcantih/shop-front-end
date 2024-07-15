@@ -30,7 +30,7 @@ Dependências do projeto front-end:<br />
   lucide-react: Uma biblioteca de ícones para utiliza-los no decorrer da aplicação;
   awesome-snackbar: Uma biblioteca que possibilita criar alertas personalizados na aplicação;
 
-  ## Link para o repositório [BACK-END](https://github.com/DanielCavalcantih/shop-back-end)
+  ### Link para o repositório [BACK-END](https://github.com/DanielCavalcantih/shop-back-end)
 
   ⌨️ Feito por [Daniel Cavalcanti](https://github.com/DanielCavalcantih) 😊
   
