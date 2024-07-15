@@ -4,7 +4,7 @@ import { formatedData, getRentability } from "../../utils/masks";
 
 export default function CardProduct({
   product,
-  user,
+  users,
   selectedSection,
   setSelectedProduct,
   setShowModalEdit,
@@ -12,21 +12,24 @@ export default function CardProduct({
 }) {
   return (
     <div className="card-product">
-      <div className="img-texts">
-        <div className="limit-img">
-          <img src={product.image} height={150} alt="" />
-        </div>
+      <div className="limit-img">
+        <img src={product.image} className="img-product" alt="" />
+      </div>
+      <div className="info-price">
         <div className="container-info-product">
           <div>
             <p className="product-name">{product.name}</p>
             <p className="product-description">{product.description}</p>
           </div>
           <p className="date">
-            Publicado em {formatedData(product.created)} por {user.name}
+            Publicado em {formatedData(product.created)} por{" "}
+            {users.find((item) => item.id === product.user_id)
+              ? users.find((item) => item.id === product.user_id).name
+              : "-"}
           </p>
         </div>
+        <span className="price">{getRentability(product.price)}</span>
       </div>
-      <span className="price">{getRentability(product.price)}</span>
       {selectedSection === 2 && (
         <div className="tools">
           <button

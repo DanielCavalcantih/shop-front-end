@@ -70,3 +70,13 @@
 .yes:hover {
   background-color: rgb(23, 123, 199);
 }
+
+@media screen and (max-width: 460px) {
+  .container-delete h2 {
+    font-size: 18px;
+  }
+
+  .container-delete {
+    width: 320px;
+  }
+}

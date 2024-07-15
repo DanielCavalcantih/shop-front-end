@@ -1,5 +1,4 @@
 .card-product {
-  width: 100%;
   border-radius: 12px;
   display: flex;
   background-color: white;
@@ -13,11 +12,6 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.img-texts {
-  display: flex;
-  width: 100%;
-  gap: 16px;
-}
 .limit-img {
   min-width: 310px;
   display: flex;
@@ -26,11 +20,24 @@
   border-radius: 20px;
 }
 
+.img-product {
+  height: 150px;
+}
+
 .container-info-product {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   gap: 16px;
+  height: 150px;
+  width: 100%;
+}
+
+.info-price {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .container-info-product div {
@@ -86,4 +93,53 @@
 
 .tools button:hover {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1250px) {
+  .container-info-product {
+    height: auto;
+  }
+
+  .info-price {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .img-product {
+    height: 120px;
+  }
+
+  .limit-img {
+    min-width: 220px;
+  }
+
+  .product-name {
+    margin-top: 24px;
+  }
+
+  .price {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .img-product {
+    height: 80px;
+  }
+
+  .limit-img {
+    min-width: 150px;
+  }
+
+  .product-name {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  .product-description {
+    font-size: 16px;
+  }
 }

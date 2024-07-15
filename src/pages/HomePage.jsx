@@ -33,6 +33,7 @@ export default function HomePage() {
   };
 
   const loadProducts = async () => {
+    setIsLoading(true);
     try {
       const response = await getProducts();
       if (response.status === 200) {
@@ -47,6 +48,7 @@ export default function HomePage() {
   };
 
   const loadMyProducts = async () => {
+    setIsLoading(true);
     try {
       const response = await getMyProducts();
       if (response.status === 200) {
@@ -110,7 +112,7 @@ export default function HomePage() {
                   <CardProduct
                     key={product.id}
                     product={product}
-                    user={users.find((user) => user.id === product.user_id)}
+                    users={users}
                     selectedSection={selectedSection}
                     setSelectedProduct={setSelectedProduct}
                     setShowModalEdit={setShowModalEdit}
@@ -118,7 +120,11 @@ export default function HomePage() {
                   />
                 ))
               ) : (
-                <p className="none">Nenhum produto encontrado!</p>
+                <p className="none">
+                  {selectedSection === 1
+                    ? "Nenhum produto encontrado!"
+                    : "Você não tem nenhum anúncio!"}
+                </p>
               )}
             </div>
           )}

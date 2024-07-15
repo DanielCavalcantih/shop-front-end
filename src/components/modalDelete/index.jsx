@@ -14,7 +14,7 @@ export default function ModalDelete({
       setIsLoading(true);
       const response = await deleteProduct(selectedProduct.id);
       if (response.status === 204) {
-        successAlert(response.data.message);
+        successAlert("Produto deletado com sucesso!");
         closeModal();
         await reloadMyProducts();
       }
