@@ -26,7 +26,7 @@ Dependências do projeto front-end:<br />
   — lucide-react;<br />
   — awesome-snackbar;<br />
 
-  react-loading: Utilizada para adicionar carregamentos personalizados na aplicação;
+  react-loading: Utilizada para adicionar carregamentos personalizados na aplicação;<br />
   lucide-react: Uma biblioteca de ícones para utiliza-los no decorrer da aplicação;
   awesome-snackbar: Uma biblioteca que possibilita criar alertas personalizados na aplicação;
 
