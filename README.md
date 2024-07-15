@@ -4,7 +4,7 @@ O Shop consiste em uma aplicação para anúncios de produtos, com um sistema de
 
 ## 🚀 Começando
 
-Para testar a aplicação, você pode acessar este *[LINK PARA O PROJETO](https://shop-front-end-red.vercel.app/), criar um novo usuário e testar toda a aplicação.
+Para testar a aplicação, você pode acessar este [LINK PARA O PROJETO](https://shop-front-end-red.vercel.app/), criar um novo usuário e testar toda a aplicação.
 
 ## 📋 Pré-requisitos
 
