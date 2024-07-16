@@ -1,5 +1,8 @@
 main {
   padding: 110px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main h2 {
@@ -12,6 +15,7 @@ main h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 70%;
 }
 
 .section-title-button button {
@@ -89,6 +93,13 @@ main h2 {
   background-color: #1c9bfd;
 }
 
+@media screen and (max-width: 1000px) {
+  .section-title-button {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .container-products {
     width: 100%;
@@ -96,13 +107,6 @@ main h2 {
 
   main {
     padding: 110px 20px 20px 20px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .section-title-button {
-    flex-direction: column;
-    gap: 16px;
   }
 }
 

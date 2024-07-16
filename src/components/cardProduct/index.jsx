@@ -1,4 +1,4 @@
-import { Edit, Trash } from "lucide-react";
+import { Edit, Image, Trash } from "lucide-react";
 import "./style.css";
 import { formatedData, getRentability } from "../../utils/masks";
 
@@ -10,10 +10,23 @@ export default function CardProduct({
   setShowModalEdit,
   setShowModalDelete,
 }) {
+  const verifyImagem = (url) => {
+    if (typeof url !== "string") return false;
+    return (
+      url.match(/^http[^?]*.(jpg|jpeg|gif|png|tiff|bmp)(\?(.*))?$/gim) != null
+    );
+  };
+
   return (
     <div className="card-product">
       <div className="limit-img">
-        <img src={product.image} className="img-product" alt="" />
+        {verifyImagem(product.image) ? (
+          <img src={product.image} className="img-product" alt="" />
+        ) : (
+          <div className="none-image">
+            <Image size={50} color="gray" />
+          </div>
+        )}
       </div>
       <div className="info-price">
         <div className="container-info-product">
