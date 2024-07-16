@@ -24,7 +24,9 @@ export default function LoginPage() {
           navigate("/home");
         }
       } catch (error) {
-        errorAlert(error.response.data.message);
+        error.response
+          ? errorAlert(error.response.data.message)
+          : errorAlert("Problemas com a conexão com o servidor!");
       }
     } else {
       try {
@@ -50,7 +52,9 @@ export default function LoginPage() {
           errorAlert("Verifique os campos e tente novamente!");
         }
       } catch (error) {
-        errorAlert(error.response.data.message);
+        error.response
+          ? errorAlert(error.response.data.message)
+          : errorAlert("Problemas com a conexão com o servidor!");
       }
     }
   };
@@ -73,22 +77,22 @@ export default function LoginPage() {
                 onChange={({ target }) => setEmail(target.value)}
                 value={email}
               />
-                <div className="password-input">
-                  <input
-                    className="password-field"
-                    placeholder="Senha (min 8 caracteres)"
-                    type={showPassword ? "text" : "password"}
-                    onChange={({ target }) => setPassword(target.value)}
-                    value={password}
-                  />
-                  <button
-                    className="eye"
-                    type="button"
-                    onClick={() => setShowPassword(!showPassword)}
-                  >
-                    {showPassword ? <Eye /> : <EyeOff />}
-                  </button>
-                </div>
+              <div className="password-input">
+                <input
+                  className="password-field"
+                  placeholder="Senha (min 8 caracteres)"
+                  type={showPassword ? "text" : "password"}
+                  onChange={({ target }) => setPassword(target.value)}
+                  value={password}
+                />
+                <button
+                  className="eye"
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? <Eye /> : <EyeOff />}
+                </button>
+              </div>
               <button type="submit" className="login-register-button">
                 Entrar
               </button>
