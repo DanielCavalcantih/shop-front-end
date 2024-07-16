@@ -19,9 +19,9 @@ Para testar sua aplicação localmente, siga o passo a passo:
   5 - Após clonar o repositório, entre na pastra criada com o nome "shop-front-end", clique com o botão direito e "Abrir com o terminal";<br />
   6 - Com VSCode instalado (Visual Studio Code), rode o comando `code .`, para abrir o editor de código;<br />
   7 - No terminal do próprio VSCode, rode o comando `npm install`, para instalar todas as dependências do projeto;<br />
-  7 - Renomeie o arquivo `.env.example` para apenas `.env`;<br />
-  8 - Inicie o projeto com o comando `npm start`;<br />
-  9 - Se já passou pela etapa do back-end, pode utilizar a aplicação, se não, vá para o [repositório back-end](https://github.com/DanielCavalcantih/shop-back-end) e siga as instruções para utilizar a aplicação;
+  8 - Renomeie o arquivo `.env.example` para apenas `.env`;<br />
+  9 - Inicie o projeto com o comando `npm start`;<br />
+  10 - Se já passou pela etapa do back-end, pode utilizar a aplicação, se não, vá para o [repositório back-end](https://github.com/DanielCavalcantih/shop-back-end) e siga as instruções para utilizar a aplicação;
 
 ## 📋 Pré-requisitos
 
