@@ -4,7 +4,22 @@ O Shop consiste em uma aplicação para anúncios de produtos, com um sistema de
 
 ## 🚀 Começando
 
-Para testar a aplicação, você pode acessar este [LINK PARA O PROJETO](https://shop-front-end-red.vercel.app/), criar um novo usuário e testar toda a aplicação.
+### Deployada
+
+Para testar a aplicação deployada, você pode acessar este [LINK PARA O PROJETO](https://shop-front-end-red.vercel.app/), criar um novo usuário e testar toda a aplicação.
+
+### Localmente
+
+Para testar sua aplicação localmente, siga o passo a passo:
+
+  1 - Copie a chave SSH deste repositório: `git@github.com:DanielCavalcantih/shop-front-end.git`;<br />
+  2 - Crie uma pasta nova em seu computador, você escolhe o nome;<br />
+  3 - Abra o terminal dentro desta pasta (clicando com o botão direito do mouse dentro da pasta e "Abrir com o terminal");<br />
+  3 - Abra o terminal dentro desta pasta (clicando com o botão direito do mouse dentro da pasta e "Abrir com o terminal");<br />
+  
+
+  
+
 
 ## 📋 Pré-requisitos
 
